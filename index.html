@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Alura Encryptor</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <textarea
+            name="phrase"
+            class="input-phrase"
+            id="phrase"
+            placeholder="Enter text here"
+            maxlength="500"
+            oninput="updateCharacterCount()"
+            ></textarea>
+            <div class="character-count">
+                <span id="charCount">0</span>/500
+            </div>
+        </div>
+    </div>
+    <div class="conditions">
+        <p>Only lowercase letters and no accents.</p>
+    </div>
+    <div class="button-group">
+        <button class="btn-encrypt" type="button" onclick="encrypt()">Encrypt</button>
+        <button class="btn-decrypt" type="button" onclick="decrypt()">Decrypt</button>
+    </div>
+    <div class="result">
+        <img src="resources/Doll.png" id="doll" alt="Doll Image">
+        <div class="message" id="message">
+            <h3 id="title">No message was found</h3>
+            <p id="paragraph">Enter the text you want to encrypt or decrypt</p> 
+            <button id="copyButton" style="display: none;" onclick="copyToClipboard()">Copy</button>
+        </div>
+    </div>
+    
+    
+    <script src="encrypter/script.js"></script>
+</body>
+</html>
