@@ -1,4 +1,4 @@
-# Encrypt Alura
+# Encryptor Alura
 
 Welcome to Encriptador Alura! This project is a tool for encrypting and decrypting text using specific rules. It is ideal for learning basic cryptography and for educational projects.
 
